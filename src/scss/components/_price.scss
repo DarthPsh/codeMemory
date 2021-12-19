@@ -1,0 +1,27 @@
+.price {
+	&__container {
+		display: flex;
+
+		@media (max-width: $desktop - 1px) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		@media (min-width: $desktop * 1px) {
+			&:not(:last-child) {
+				margin-right: 170px;
+			}
+		}
+		@media (max-width: $desktop - 1px) {
+			margin-bottom: 50px;
+		}
+
+		&-num {
+			font-family: $font-montserrat;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 22px;
+		}
+	}
+}

@@ -1,0 +1,114 @@
+main.home
+	include ../components/hero
+
+	section#save.section.save
+		.container.save__container
+			h2.title.title--uppercase.title--ms.title--mb-big Сохранить память просто
+			.save__steps
+				.save__step
+					img.save__step-img(src='./images/1.png' alt='img')
+					.save__step-desc
+						| Зарегистрируйтесь в сервисе на сайте &nbsp;
+						a(href="https://memorycode.ru") memorycode.ru
+				.save__step
+					img.save__step-img(src='./images/2.png' alt='img')
+					.save__step-desc
+						| Наполните страницу данными близкого за несколько минут
+				.save__step.save__step--wider
+					img.save__step-img(src='./images/3.png' alt='img')
+					.save__step-desc
+						| Закрепите металлическую табличку на памятник
+				.save__step
+					img.save__step-img(src='./images/4.png' alt='img')
+					.save__step-desc
+						| Поделитесь созданной страницей с родными и близкими
+
+	section#how_does_it_work.section.how
+		.container.how__container
+			h2.title.title--uppercase.title--ms.title--mb-big.title--short Что можно сохранить на странице памяти?
+			.how__items
+				.how__item.how__item--front
+					+svg("c-play")
+					span.how__item-name.how__item-name--small Видео
+					.how__item-description
+						| Youtube, Vimeo, Facebook и другие видео-сервисы
+				.how__item.how__item--front
+					+svg("c-vol")
+					span.how__item-name.how__item-name--small Аудиозаписи
+					.how__item-description
+						| Записанный голос, песни или мероприятия
+				.how__item.how__item--front
+					+svg("c-camera")
+					span.how__item-name.how__item-name--small Фотографии
+					.how__item-description
+						| Загружайте сколько угодно изображений
+				.how__item.how__item--front
+					+svg("c-list")
+					span.how__item-name.how__item-name--small Текстовые описания
+					.how__item-description
+						| Эпитафия, краткое описание, биография, истории из жизни
+				.how__item.how__item--front
+					+svg("c-link")
+					span.how__item-name.how__item-name--small Ссылки
+					.how__item-description
+						| Ссылки на страницы родственников, социальные сети, википедию
+				.how__item.how__item--front
+					+svg("c-compass")
+					span.how__item-name.how__item-name--small Карты
+					.how__item-description
+						| Находите захоронение легко по отмеченной точке на карте
+
+	section#sample_pages.section.banner
+		.container.banner__container
+			img.banner__container-cover(src='./images/banner.png' alt='banner')
+			.banner__text
+				h2.title.title--uppercase.title--ms.title--mb-small.title--white.title--shorter Примеры страниц и подробная информация
+				.banner__text-cta
+					span
+						| Наведите камеру смартфона на QR-код
+					+svg("icon-qr")
+			.banner__qr
+				img.banner__qr-img(src='./images/qr.png' alt='qr')
+
+	section#price.section.section--pb.price
+		.container.price__container
+			.price__item
+				.price__item-name Расширенная
+					br
+					| страница
+				.price__item-num 5 450 ₽
+			.price__item
+				.price__item-name Расширенная страница
+					br
+					| + написание биографии
+				.price__item-num 8 650 ₽
+			.price__item
+				.price__item-name Родственная
+					br
+					| страница
+				.price__item-num 16 350 ₽
+
+	section#how_to_order.section.how.how--no-pt
+		.container.how__container
+			h2.title.title--uppercase.title--ms.title--mb-big Как заказать страницу памяти?
+			.how__options
+				.how__option
+					.title.how__option-title 1 вариант
+					.how__option-desc
+						| Обратитесь к представителям
+						br
+						| "Кода Памяти", номера телефонов:
+						br
+						a.how__option-desc__link(href='tel:+79875072991') +79875072991
+						|  или
+						a.how__option-desc__link(href='tel:+79033235520') +79033235520
+				.how__option
+					.title.how__option-title 2 вариант
+					.how__option-desc
+						| На сайте
+						a.how__option-desc__link.how__option-desc__link--accent(href="https://memorycode.ru")
+							| &nbsp; memorycode.ru
+						| , нажав
+						br
+						| на кнопку "Создать страницу"
+

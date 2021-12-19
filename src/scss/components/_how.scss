@@ -1,0 +1,109 @@
+.how {
+	background: $color-gray--light;
+
+	@media (max-width: $desktop - 1px) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@media (min-width: $desktop * 1px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	&--no-pt {
+		padding-top: 0;
+	}
+}
+
+.how__title {
+	max-width: 780px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.how__description {
+	max-width: 500px;
+	margin-bottom: 80px;
+}
+
+.how__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+	grid-column-gap: 140px;
+	grid-row-gap: 54px;
+	svg {
+		height: 56px;
+		width: 56px;
+		margin-bottom: 20px;
+		fill: $color-accent;
+	}
+}
+
+.how__item--front {
+	@media (max-width: $desktop - 1px) {
+		padding-left: 86px;
+		position: relative;
+
+		svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+.how__item-name {
+	font-family: $font-montserrat;
+	font-size: 25px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 10px;
+	&--small {
+		margin-bottom: 16px;
+		line-height: 140%;
+		letter-spacing: -0.25px;
+		@media (min-width: $desktop * 1px) {
+			font-size: 20px;
+		}
+		@media (max-width: $desktop - 1px) {
+			font-size: 22px;
+		}
+	}
+}
+
+.how__options {
+	display: flex;
+	@media (max-width: $desktop - 1px) {
+		flex-direction: column;
+	}
+}
+
+.how__option {
+	max-width: 263px;
+
+	@media (min-width: $desktop * 1px) {
+		&:not(:last-child) {
+			margin-right: 133px;
+		}
+	}
+
+	@media (max-width: $desktop - 1px) {
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&-title {
+		margin-bottom: 17px;
+	}
+
+	&-desc {
+		font-weight: 300;
+		&__link {
+			&--accent {
+				color: $color-accent;
+			}
+		}
+	}
+}

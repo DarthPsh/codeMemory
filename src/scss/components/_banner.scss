@@ -1,0 +1,53 @@
+.banner {
+	&__container {
+		padding: 60px 95px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: $desktop - 1px) {
+			flex-direction: column;
+		}
+
+		&-cover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			z-index: -1;
+		}
+	}
+
+	&__text {
+		color: $color-white;
+		font-family: $font-montserrat;
+		font-weight: 700;
+		@media (max-width: $desktop - 1px) {
+			margin-bottom: 30px;
+		}
+
+		&-cta {
+			display: flex;
+			align-items: center;
+			font-size: 20px;
+			line-height: 22px;
+			span {
+				margin-right: 15px;
+			}
+			svg {
+				height: 32px;
+				width: 32px;
+				min-width: 32px;
+			}
+		}
+	}
+
+	&__qr {
+
+	}
+
+
+}

@@ -1,0 +1,31 @@
+.save {
+	&__steps {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 70px;
+		justify-items: center;
+
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 600px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__step {
+		width: 242px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&--wider {
+			width: 261px;
+			@media (max-width: 600px) {
+				img {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

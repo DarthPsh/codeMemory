@@ -1,0 +1,28 @@
+header.header
+
+	.container.header__container
+
+		a.header__logo(href=data.header.links.logo)
+			+svg("code-logo")
+
+		button.header__burger.btn.js-burger(type="button")
+			span
+			span
+
+		nav.header__menu
+			.header__list
+				each object, key in data.header.menu
+					a.header__link.js-to-anchor(
+						href=object.url
+						data-link=key
+					)
+						!= object.name
+
+		nav.header__menu-mob
+			.header__list-mob
+				each object, key in data.header.menu
+					a.header__link-mob.js-to-anchor(
+						href=object.url
+						data-link=key
+					)
+						!= object.name
